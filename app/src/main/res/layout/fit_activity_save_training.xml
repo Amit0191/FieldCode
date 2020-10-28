@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:overScrollMode="never"
+    tools:context=".fitActivity.FitSaveTrainingActivity">
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_cancel"
+        android:textColor="@color/fit_colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_edit_training"
+        android:textColor="@color/fit_colorTextPrimary" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/saveTrainingMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:src="@drawable/fit_ic_more_horiz_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnCancel"
+        android:layout_margin="@dimen/fit_spacing_standard_1">
+
+        <TextView
+            android:id="@+id/workoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fit_morning_workout"
+            android:textAppearance="@style/fit_FontStyleBold"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_xxlarge" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/editTrainingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/fit_spacing_control"
+            android:src="@drawable/fit_ic_edit_black_24dp" />
+
+        <View
+            android:id="@+id/workoutLine1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/workoutTitle"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+            android:background="@color/fit_colorBottomEditTextLine" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workoutLine1"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_date"
+            android:textColor="@color/fit_colorTextSecondary" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workoutLine1"
+            android:layout_alignParentEnd="true"
+            android:text="@string/fit_18th_sep_25th_sep_2018"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorPrimaryDark"
+            android:textSize="@dimen/fit_font_size_medium" />
+
+        <View
+            android:id="@+id/workoutLine2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/lblDate"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+            android:background="@color/fit_colorBottomEditTextLine" />
+
+        <TextView
+            android:id="@+id/txtTrainingType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workoutLine2"
+            android:text="@string/fit_training_type"
+            android:textColor="@color/fit_colorTextSecondary" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/typeName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTrainingType"
+            android:layout_marginTop="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_dumbbell_flyes"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/typeTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName1"
+            android:drawableStart="@drawable/fit_ic_watch_black_24dp"
+            android:drawablePadding="@dimen/fit_spacing_6"
+            android:text="@string/fit_15_mins" />
+
+        <TextView
+            android:id="@+id/typeEdit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName1"
+            android:layout_marginStart="@dimen/fit_spacing_10"
+            android:layout_toEndOf="@id/typeTime1"
+            android:drawablePadding="@dimen/fit_spacing_standard"
+            android:text="@string/fit_edit"
+            android:textColor="@color/fit_colorPrimaryDark" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTrainingType"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:checked="true"
+            android:thumb="@drawable/fit_thumb_layout"
+            app:track="@drawable/fit_track_layout" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/typeName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeTime1"
+            android:layout_marginTop="@dimen/fit_spacing_standard_2"
+            android:text="@string/fit_power_lifting"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/typeTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName2"
+            android:drawableStart="@drawable/fit_ic_watch_black_24dp"
+            android:drawablePadding="@dimen/fit_spacing_6"
+            android:text="@string/fit_20_mins" />
+
+        <TextView
+            android:id="@+id/typeEdit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName2"
+            android:layout_marginStart="@dimen/fit_spacing_10"
+            android:layout_toEndOf="@id/typeTime2"
+            android:drawablePadding="@dimen/fit_spacing_standard"
+            android:text="@string/fit_edit"
+            android:textColor="@color/fit_colorPrimaryDark" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:thumb="@drawable/fit_thumb_layout"
+            app:track="@drawable/fit_track_layout" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/typeName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeTime2"
+            android:layout_marginTop="@dimen/fit_spacing_standard_2"
+            android:text="@string/fit_bulgarian_squat"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/typeTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName3"
+            android:drawableStart="@drawable/fit_ic_watch_black_24dp"
+            android:drawablePadding="@dimen/fit_spacing_6"
+            android:text="@string/fit_10_mins" />
+
+        <TextView
+            android:id="@+id/typeEdit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName3"
+            android:layout_marginStart="@dimen/fit_spacing_10"
+            android:layout_toEndOf="@id/typeTime3"
+            android:drawablePadding="@dimen/fit_spacing_standard"
+            android:text="@string/fit_edit"
+            android:textColor="@color/fit_colorPrimaryDark" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:checked="true"
+            android:thumb="@drawable/fit_thumb_layout"
+            app:track="@drawable/fit_track_layout" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/typeName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeTime3"
+            android:layout_marginTop="@dimen/fit_spacing_standard_2"
+            android:text="@string/fit_push_up"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/typeTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName4"
+            android:drawableStart="@drawable/fit_ic_watch_black_24dp"
+            android:drawablePadding="@dimen/fit_spacing_6"
+            android:text="@string/fit_15_mins" />
+
+        <TextView
+            android:id="@+id/typeEdit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName4"
+            android:layout_marginStart="@dimen/fit_spacing_10"
+            android:layout_toEndOf="@id/typeTime4"
+            android:drawablePadding="@dimen/fit_spacing_standard"
+            android:text="@string/fit_edit"
+            android:textColor="@color/fit_colorPrimaryDark" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:checked="true"
+            android:thumb="@drawable/fit_thumb_layout"
+            app:track="@drawable/fit_track_layout" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/typeName5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeTime4"
+            android:layout_marginTop="@dimen/fit_spacing_standard_2"
+            android:text="@string/fit_barbell_bench_press"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/typeTime5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName5"
+            android:drawableStart="@drawable/fit_ic_watch_black_24dp"
+            android:drawablePadding="@dimen/fit_spacing_6"
+            android:text="@string/fit_25_mins" />
+
+        <TextView
+            android:id="@+id/typeEdit5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeName5"
+            android:layout_marginStart="@dimen/fit_spacing_10"
+            android:layout_toEndOf="@id/typeTime5"
+            android:drawablePadding="@dimen/fit_spacing_standard"
+            android:text="@string/fit_edit"
+            android:textColor="@color/fit_colorPrimaryDark" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:checked="true"
+            android:thumb="@drawable/fit_thumb_layout"
+            app:track="@drawable/fit_track_layout" />
+
+        <!--            -->
+
+        <TextView
+            android:id="@+id/addExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnSaveTraining"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/fit_ic_add_white_24dp"
+            android:drawablePadding="@dimen/fit_spacing_control"
+            android:gravity="center"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_add_exercise"
+            android:textColor="@color/fit_colorTextSecondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveTraining"
+            style="@style/fit_ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:text="@string/fit_save_training" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:overScrollMode="never"
+    tools:context=".fitActivity.FitNotificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/notificationBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/fit_ic_keyboard_arrow_left_black_24dp"
+            android:gravity="end"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_skip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationBack"
+            android:layout_marginStart="@dimen/fit_spacing_large"
+            android:layout_marginEnd="@dimen/fit_spacing_large">
+
+            <TextView
+                android:id="@+id/notificationBox"
+                android:layout_width="@dimen/fit_spacing_60"
+                android:layout_height="@dimen/fit_spacing_60"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fit_spacing_45"
+                android:background="@drawable/fit_bg_shadow"
+                android:backgroundTint="@color/fit_colorGrey"
+                android:gravity="center|top"
+                android:padding="@dimen/fit_spacing_standard_new"
+                android:text="@string/fit_h"
+                android:textColor="@color/fit_colorPrimaryDark"
+                android:textSize="@dimen/fit_font_size_xxxlarge2" />
+
+            <TextView
+                android:id="@+id/notificationBadge"
+                android:layout_width="@dimen/fit_spacing_22"
+                android:layout_height="@dimen/fit_spacing_22"
+                android:layout_alignEnd="@id/notificationBox"
+                android:layout_marginTop="@dimen/fit_spacing_xxlarge"
+                android:background="@drawable/fit_layout_day_circle"
+                android:gravity="center"
+                android:text="@string/fit_12"
+                android:textColor="@color/fit_colorPureWhite" />
+
+            <TextView
+                android:id="@+id/notificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notificationBox"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fit_spacing_standard_new"
+                android:padding="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_notifications"
+                android:textAppearance="@style/fit_FontStyleBold"
+                android:textColor="@color/fit_colorTextPrimary"
+                android:textSize="@dimen/fit_font_size_xxxlarge2" />
+
+            <TextView
+                android:id="@+id/desctiptionNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notificationTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/fit_spacing_30"
+                android:layout_marginEnd="@dimen/fit_spacing_30"
+                android:layout_marginBottom="@dimen/fit_spacing_45"
+                android:text="@string/fit_this_way_you_will_see_when_someone_messages_you_instantly"
+                android:textAlignment="center"
+                android:textAppearance="@style/fit_FontStyleMedium"
+                android:textColor="@color/fit_colorTextSecondary"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <TextView
+                android:id="@+id/turnOnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desctiptionNotification"
+                android:paddingTop="@dimen/fit_spacing_10"
+                android:paddingBottom="@dimen/fit_spacing_10"
+                android:text="@string/fit_turn_on_all_notifications"
+                android:textColor="@color/fit_colorTextPrimary"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notificationSwitch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desctiptionNotification"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/fit_colorPrimaryDark"
+                android:thumb="@drawable/fit_thumb_layout"
+                app:track="@drawable/fit_track_layout" />
+
+            <View
+                android:id="@+id/nLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/notificationSwitch1"
+                android:layout_marginTop="@dimen/fit_spacing_control"
+                android:layout_marginBottom="@dimen/fit_spacing_control"
+                android:background="@color/fit_colorBottomEditTextLine" />
+
+            <!--        -->
+
+            <TextView
+                android:id="@+id/friendsNear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nLine1"
+                android:paddingTop="@dimen/fit_spacing_10"
+                android:paddingBottom="@dimen/fit_spacing_10"
+                android:text="@string/fit_friends_nearby"
+                android:textColor="@color/fit_colorTextPrimary"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notificationSwitch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nLine1"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/fit_colorPrimaryDark"
+                android:thumb="@drawable/fit_thumb_layout"
+                app:track="@drawable/fit_track_layout" />
+
+            <View
+                android:id="@+id/nLine2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/notificationSwitch2"
+                android:layout_marginTop="@dimen/fit_spacing_control"
+                android:layout_marginBottom="@dimen/fit_spacing_control"
+                android:background="@color/fit_colorBottomEditTextLine" />
+
+            <!--        -->
+
+            <TextView
+                android:id="@+id/inboxMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nLine2"
+                android:paddingTop="@dimen/fit_spacing_10"
+                android:paddingBottom="@dimen/fit_spacing_10"
+                android:text="@string/fit_friends_nearby"
+                android:textColor="@color/fit_colorTextPrimary"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notificationSwitch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nLine2"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/fit_colorPrimaryDark"
+                android:thumb="@drawable/fit_thumb_layout"
+                app:track="@drawable/fit_track_layout" />
+
+            <View
+                android:id="@+id/nLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/notificationSwitch3"
+                android:layout_marginTop="@dimen/fit_spacing_control"
+                android:layout_marginBottom="@dimen/fit_spacing_control"
+                android:background="@color/fit_colorBottomEditTextLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nLine3"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:layout_marginBottom="@dimen/fit_spacing_45"
+                android:text="@string/fit_this_way_you_will_see_when_someone_messages_you_instantly" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

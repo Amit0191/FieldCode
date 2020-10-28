@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fit_spacing_standard_1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scheduleCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fit_spacing_standard">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/teacherItemImage"
+            android:layout_width="@dimen/fit_spacing_62"
+            android:layout_height="@dimen/fit_spacing_62"
+            android:scaleType="fitXY"
+            android:src="@drawable/fit_flow_yoga" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/teacherItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fit_spacing_standard_1"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+        android:layout_toStartOf="@id/teacherItemFollower"
+        android:layout_toEndOf="@id/scheduleCard"
+        android:text="@string/fit_miranda_jones"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+    <TextView
+        android:id="@+id/teacherItemFollower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:padding="@dimen/fit_spacing_control"
+        android:text="@string/fit_1_2k_followers" />
+
+    <TextView
+        android:id="@+id/teacherType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherItemName"
+        android:layout_marginStart="@dimen/fit_spacing_standard"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+        android:layout_toStartOf="@id/teacherItemFollower"
+        android:layout_toEndOf="@id/scheduleCard"
+        android:padding="@dimen/fit_spacing_control"
+        android:text="@string/fit_hot_yoga_teacher" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherType"
+        android:layout_marginStart="@dimen/fit_spacing_standard_1"
+        android:layout_toEndOf="@id/scheduleCard"
+        android:rating="3"
+        android:theme="@style/fit_RatingBar" />
+
+</RelativeLayout>

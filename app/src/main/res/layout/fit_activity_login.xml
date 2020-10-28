@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:orientation="vertical"
+    tools:context=".fitActivity.FitLoginActivity">
+
+    <TextView
+        android:id="@+id/txtLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/fit_spacing_standard_new"
+        android:text="@string/fit_log_in"
+        android:textColor="@color/fit_colorTextPrimary" />
+
+    <LinearLayout
+        android:id="@+id/LogInDotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogIn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/fit_spacing_large"
+        android:layout_marginTop="@dimen/fit_spacing_90"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fit_spacing_380"
+        android:layout_below="@id/txtLogIn"
+        android:overScrollMode="never" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogInFaceBook"
+        style="@style/fit_ButtonStyle"
+        android:layout_below="@id/vpLogin"
+        android:layout_marginStart="@dimen/fit_spacing_30"
+        android:layout_marginTop="@dimen/fit_spacing_22"
+        android:layout_marginEnd="@dimen/fit_spacing_30"
+        android:backgroundTint="@color/fit_colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/fit_continue_with_facebook"
+        app:cornerRadius="@dimen/fit_spacing_standard"
+        app:icon="@drawable/fit_ic_facebook"
+        app:iconGravity="textStart" />
+
+    <TextView
+        android:id="@+id/txtCreateWithEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogInFaceBook"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/fit_spacing_standard_new"
+        android:text="@string/fit_create_account_with_email"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textStyle="bold" />
+
+</RelativeLayout>

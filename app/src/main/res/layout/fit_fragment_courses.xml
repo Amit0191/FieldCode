@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitFragment.FitCoursesFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMasterBack"
+            style="@style/fit_back_button" />
+
+        <TextView
+            android:text="@string/fit_training"
+            style="@style/fit_title_text" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/editCourses"
+            style="@style/fit_back_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fit_spacing_standard"
+            android:padding="@dimen/fit_spacing_control"
+            android:src="@drawable/fit_ic_more_horiz_black_24dp" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/coursesTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fit_spacing_xxxlarge"
+        app:tabIndicatorColor="@color/fit_colorBlack"
+        app:tabMode="fixed"
+        android:layout_below="@id/rl_title"
+        app:tabSelectedTextColor="@color/fit_colorTextPrimary"
+        app:tabTextAppearance="@style/fit_TabText" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/coursesViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coursesTabLayout"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

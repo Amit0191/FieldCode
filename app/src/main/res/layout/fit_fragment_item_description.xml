@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitFragment.FitItemDescriptionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collaptool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/fit_colorPureWhite"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/itemcontentimage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fit_athlete"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/fit_ic_keyboard_arrow_left_black_24dp" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/fit_fragment_item_description">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_1">
+
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fit_flow_yoga"
+                    android:textAppearance="@style/fit_FontStyleBold"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+                <TextView
+                    android:id="@+id/itemSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemTitle"
+                    android:layout_marginTop="@dimen/fit_spacing_control"
+                    android:text="@string/fit_keeps_your_waist_in_shape"
+                    android:textAppearance="@style/fit_FontStyleMedium"
+                    android:textColor="@color/fit_colorTextSecondary"
+                    android:textSize="@dimen/fit_font_size_medium" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/itemRatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemSubTitle"
+                    android:layout_marginTop="@dimen/fit_spacing_control_half"
+                    android:rating="3"
+                    android:theme="@style/fit_RatingBar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemSubTitle"
+                    android:layout_marginStart="@dimen/fit_spacing_6"
+                    android:layout_toEndOf="@id/itemRatingBar"
+                    android:text="@string/fit_288_review" />
+
+                <TextView
+                    android:id="@+id/txtWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemRatingBar"
+                    android:paddingTop="@dimen/fit_spacing_standard"
+                    android:paddingBottom="@dimen/fit_spacing_standard"
+                    android:text="@string/fit_5_weeks"
+                    android:textSize="@dimen/fit_font_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemRatingBar"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/fit_spacing_standard"
+                    android:paddingBottom="@dimen/fit_spacing_standard"
+                    android:text="@string/fit_25_days"
+                    android:textSize="@dimen/fit_font_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/itemRatingBar"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="@dimen/fit_spacing_standard"
+                    android:paddingBottom="@dimen/fit_spacing_standard"
+                    android:text="@string/fit_20_mins"
+                    android:textSize="@dimen/fit_font_size_medium" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/txtWeek"
+                    android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+                    android:background="@color/fit_colorBottomEditTextLine" />
+
+                <TextView
+                    android:id="@+id/txtSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:text="@string/fit_schedule"
+                    android:textAppearance="@style/fit_FontStyleBold"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_large" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scheduleRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative2"
+                android:layout_marginStart="@dimen/fit_spacing_standard"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+                android:layoutAnimation="@anim/fit_layout_fall_down"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

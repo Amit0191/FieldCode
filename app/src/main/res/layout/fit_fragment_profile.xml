@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorGrey"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".fitFragment.FitProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_300"
+            android:background="@color/fit_colorBlack"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fit_slide5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profileBack"
+                style="@style/fit_back_button"
+                android:layout_marginStart="@dimen/fit_spacing_control"
+                android:src="@drawable/fit_keyboard_arrow_left_white_24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/profileMenu"
+                style="@style/fit_back_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/fit_spacing_control"
+                android:padding="@dimen/fit_spacing_control"
+                android:src="@drawable/fit_ic_more_horiz_white_24dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fit_spacing_100"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_carly_jackson"
+            android:textAppearance="@style/fit_FontStyleBold"
+            android:textColor="@color/fit_colorPureWhite"
+            android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+        <TextView
+            android:id="@+id/profileFollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileName"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_new1"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_1280_followers"
+            android:textColor="@color/fit_colorPureWhite" />
+
+        <TextView
+            android:id="@+id/profileFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileName"
+            android:layout_toEndOf="@id/profileFollower"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_380_following"
+            android:textColor="@color/fit_colorPureWhite" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileFollower"
+            android:layout_margin="@dimen/fit_spacing_standard_1"
+            android:background="@drawable/fit_trainer_border"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fit_spacing_standard_1">
+
+            <TextView
+                android:id="@+id/profileVideo"
+                style="@style/fit_MenuTextView"
+                android:drawableStart="@drawable/fit_ic_video_library_black_24dp"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:gravity="center_vertical"
+                android:text="@string/fit_my_videos" />
+
+            <View
+                android:id="@+id/line1"
+                style="@style/FitLine" />
+
+            <TextView
+                android:id="@+id/profilePhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/fit_ic_photo_black_24dp"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:drawablePadding="@dimen/fit_spacing_10"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/fit_spacing_standard_1"
+                android:paddingTop="@dimen/fit_spacing_standard_1"
+                android:paddingEnd="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_photos"
+                android:textColor="@color/fit_colorTextPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+            android:layout_marginBottom="@dimen/fit_spacing_xxxlarge"
+            android:background="@drawable/fit_trainer_border"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fit_spacing_standard_1">
+
+            <TextView
+                android:id="@+id/profileStatistics"
+                style="@style/fit_MenuTextView"
+                android:drawableStart="@drawable/fit_ic_profile_statistics"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:gravity="center_vertical"
+                android:text="@string/fit_statistics" />
+
+            <View
+                android:id="@+id/line2"
+                style="@style/FitLine" />
+
+            <TextView
+                android:id="@+id/profileTraining"
+                style="@style/fit_MenuTextView"
+                android:drawableStart="@drawable/fit_ic_energy"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:drawableTint="@color/fit_colorTextSecondary"
+                android:gravity="center_vertical"
+                android:text="@string/fit_training" />
+
+            <View
+                android:id="@+id/line3"
+                style="@style/FitLine" />
+
+            <TextView
+                android:id="@+id/profileAccount"
+                style="@style/fit_MenuTextView"
+                android:drawableStart="@drawable/fit_ic_account"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:drawableTint="@color/fit_colorTextSecondary"
+                android:gravity="center_vertical"
+                android:text="@string/fit_account" />
+
+            <View
+                android:id="@+id/line4"
+                style="@style/FitLine" />
+
+            <TextView
+                android:id="@+id/profileSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/fit_ic_settings_black_18dp"
+                android:drawableEnd="@drawable/fit_ic_keyboard_arrow_right_black_24dp"
+                android:drawablePadding="@dimen/fit_spacing_10"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/fit_spacing_standard_1"
+                android:paddingTop="@dimen/fit_spacing_standard_1"
+                android:paddingEnd="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_settings"
+                android:textColor="@color/fit_colorTextPrimary" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

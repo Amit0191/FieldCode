@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitActivity.FitBarbellBenchPressActivity">
+
+    <TextView
+        android:id="@+id/bbpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fit_spacing_22"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_barbell_bench_press_title"
+        android:textAppearance="@style/fit_FontStyleBold"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_xxxlarge2" />
+
+
+    <TextView
+        android:id="@+id/bbpTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bbpTitle"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fit_00_42_18"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textColor="@color/fit_colorTextSecondary"
+        android:textSize="@dimen/fit_font_size_small" />
+
+    <com.amit.fieldcode.fitUtils.FitCircularSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="@dimen/fit_spacing_200"
+        android:layout_height="@dimen/fit_spacing_200"
+        android:layout_below="@id/bbpTime"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/fit_spacing_30"
+        app:cs_circle_color="@color/fit_colorGrey"
+        app:cs_circle_fill="@color/fit_colorPureWhite"
+        app:cs_circle_progress_color="@color/fit_colorAccent"
+        app:cs_circle_stroke_width="@dimen/fit_spacing_30"
+        app:cs_circle_style="round"
+        app:cs_disable_progress_glow="true"
+        app:cs_move_outside_circle="true"
+        app:cs_pointer_color="@color/fit_colorPureWhite"
+        app:cs_pointer_halo_color_ontouch="@color/fit_colorPureWhite"
+        app:cs_pointer_stroke_width="@dimen/fit_spacing_standard_new" />
+
+    <TextView
+        android:id="@+id/bbpNoOfPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bbpTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fit_spacing_90"
+        android:gravity="center"
+        android:text="@string/fit_10_from_30" />
+
+    <LinearLayout
+        android:id="@+id/bbpLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_margin="@dimen/fit_spacing_30"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fit_colorPrimaryDark"
+            android:stateListAnimator="@null"
+            android:text="@string/fit_stop"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/fit_spacing_standard_new"
+            app:icon="@drawable/fit_ic_pause_white_24dp"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNextTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/fit_colorPureWhite"
+            android:stateListAnimator="@null"
+            android:text="@string/fit_next_training"
+            android:textAllCaps="false"
+            android:textColor="@color/fit_colorTextSecondary"
+            app:cornerRadius="@dimen/fit_spacing_standard_new"
+            app:strokeColor="@color/fit_colorTextSecondary"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bbpLinear"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fit_next_split_squat"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNext"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fit_15_step_up_with_hop_to_back" />
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:overScrollMode="never"
+    tools:context=".fitFragment.FitTrainingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/trainingViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_250"
+            android:overScrollMode="never" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/fit_spacing_control"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:src="@drawable/fit_ic_notifications_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edtTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/fit_spacing_control"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:src="@drawable/fit_ic_more_horiz_white_24dp" />
+
+
+        <LinearLayout
+            android:id="@+id/dotTrainingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fit_spacing_200"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/fit_spacing_standard_new" />
+
+        <TextView
+            android:id="@+id/txtPopularTraining"
+            style="@style/fit_heading_text"
+            android:layout_below="@id/trainingViewPager"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:layout_marginTop="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_popular_training" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/trainingRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPopularTraining"
+            android:layout_marginTop="@dimen/fit_spacing_standard"
+            android:layoutAnimation="@anim/fit_layout_fall_down"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never" />
+
+        <RelativeLayout
+            android:id="@+id/tCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_180"
+            android:layout_below="@id/trainingRecyclerview"
+            android:layout_marginStart="@dimen/fit_spacing_standard"
+            android:layout_marginTop="@dimen/fit_spacing_standard"
+            android:layout_marginEnd="@dimen/fit_spacing_standard"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_new">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fit_spacing_180"
+                android:background="@drawable/fit_bg_shadow">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/trainingImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fit_spacing_180"
+                    android:background="@drawable/fit_roundborder"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fit_athlete" />
+
+                <TextView
+                    android:id="@+id/tImageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:padding="@dimen/fit_spacing_standard_1"
+                    android:text="@string/fit_120_hours"
+                    android:textColor="@color/fit_colorPureWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tImageText"
+                    android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                    android:text="@string/fit_cardio_fitness"
+                    android:textAppearance="@style/fit_FontStyleBold"
+                    android:textColor="@color/fit_colorPureWhite"
+                    android:textSize="@dimen/fit_font_size_xxlarge" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:layout_below="@id/tCard"
+            android:background="@color/fit_colorPrimaryDark"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/dlgText"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/btnGetNow"
+                android:text="@string/fit_unlimited_access_to_all_courses"
+                android:textAppearance="@style/fit_FontStyleMedium"
+                android:textColor="@color/fit_colorPureWhite"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/fit_colorPureWhite"
+                android:stateListAnimator="@null"
+                android:text="@string/fit_get_now"
+                android:textAllCaps="false"
+                android:textColor="@color/fit_colorTextPrimary"
+                app:cornerRadius="@dimen/fit_spacing_standard_new" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

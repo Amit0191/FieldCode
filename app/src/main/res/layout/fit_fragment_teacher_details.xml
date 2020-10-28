@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitFragment.FitTeacherDetailsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collaptool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/fit_colorPureWhite"
+            app:layout_scrollFlags="scroll">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/trainerPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fit_spacing_300"
+                android:scaleType="fitXY"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/fit_athlete3"
+                android:text="@string/fit_hello_blank_fragment" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                app:layout_collapseMode="pin"
+                android:layout_height="?attr/actionBarSize">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/trainerBack"
+                    style="@style/fit_back_button"
+                    android:layout_marginStart="0dp"
+                    android:src="@drawable/fit_ic_keyboard_arrow_left_black_24dp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fit_search_corner_layout">
+
+            <RelativeLayout
+                android:id="@+id/teacherRelative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fit_search_corner_layout"
+                android:paddingStart="@dimen/fit_spacing_standard_1"
+                android:paddingTop="@dimen/fit_spacing_standard_1"
+                android:paddingEnd="@dimen/fit_spacing_standard_1">
+
+                <TextView
+                    android:id="@+id/trainerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/tFollower"
+                    android:text="@string/fit_miranda"
+                    android:textAppearance="@style/fit_FontStyleBold"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+                <TextView
+                    android:id="@+id/tFollower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="end"
+                    android:padding="@dimen/fit_spacing_control"
+                    android:text="@string/fit_1_2k_followers"
+                    android:textColor="@color/fit_colorTextSecondary"
+                    tools:ignore="RelativeOverlap" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tFollower"
+                    android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                    android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+                    android:background="@color/fit_colorBottomEditTextLine" />
+
+                <TextView
+                    android:id="@+id/txtDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:text="@string/fit_capital_height"
+                    android:textColor="@color/fit_colorTextSecondary" />
+
+                <TextView
+                    android:id="@+id/lblAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginStart="@dimen/fit_spacing_xxlarge"
+                    android:layout_toEndOf="@id/txtDistance"
+                    android:text="@string/fit_age"
+                    android:textColor="@color/fit_colorTextSecondary" />
+
+                <TextView
+                    android:id="@+id/lblrating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/fit_spacing_large"
+                    android:text="@string/fit_rating"
+                    android:textColor="@color/fit_colorTextSecondary" />
+
+                <!--            -->
+
+                <TextView
+                    android:id="@+id/trainerHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDistance"
+                    android:text="@string/fit_175cm"
+                    android:textAppearance="@style/fit_FontStyleMedium"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_normal" />
+
+                <TextView
+                    android:id="@+id/trainerAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblAge"
+                    android:layout_alignStart="@+id/lblAge"
+                    android:layout_toEndOf="@id/trainerHeight"
+                    android:text="@string/fit_32"
+                    android:textAppearance="@style/fit_FontStyleMedium"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_normal" />
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/trainerRating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblrating"
+                    android:layout_alignStart="@+id/lblrating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/fit_spacing_control"
+                    android:rating="3"
+                    android:text="@string/fit_capital_height"
+                    android:theme="@style/fit_RatingBar" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/trainerHeight"
+                    android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                    android:text="@string/fit_description"
+                    android:textColor="@color/fit_colorTextSecondary" />
+
+                <TextView
+                    android:id="@+id/txtDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDescription"
+                    android:layout_marginTop="@dimen/fit_spacing_6"
+                    android:text="@string/fit_trainer_description"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/fit_colorTextSecondary" />
+
+                <TextView
+                    android:id="@+id/txttrainerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDetails"
+                    android:layout_marginTop="@dimen/fit_spacing_standard_new"
+                    android:text="@string/fit_top_courses"
+                    android:textAppearance="@style/fit_FontStyleMedium"
+                    android:textColor="@color/fit_colorTextPrimary"
+                    android:textSize="@dimen/fit_font_size_large" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trainerRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacherRelative"
+                android:layout_marginTop="@dimen/fit_spacing_standard"
+                android:layoutAnimation="@anim/fit_layout_fall_down"
+                android:overScrollMode="never" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/fit_ButtonStyle"
+                android:layout_below="@id/trainerRecycler"
+                android:layout_margin="@dimen/fit_spacing_standard_1"
+                android:layout_marginBottom="@dimen/fit_spacing_45"
+                android:text="@string/fit_follow" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <corners android:radius="@dimen/fit_spacing_standard_new" />
+
+    <size
+        android:width="@dimen/fit_spacing_standard_new"
+        android:height="@dimen/fit_spacing_standard_new" />
+
+    <solid android:color="@color/fit_colorPrimaryDark" />
+
+</shape>

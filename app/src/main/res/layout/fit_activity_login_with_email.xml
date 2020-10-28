@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitActivity.FitCreateWithEmailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLoginImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_250"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fit_athlete3" />
+
+        <TextView
+            android:id="@+id/txtImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgLoginImage"
+            android:padding="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_please_log_back_into_your_account"
+            android:textColor="@color/fit_colorPureWhite"
+            android:textSize="@dimen/fit_font_size_xxxlarge"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLoginImage"
+            android:orientation="vertical"
+            android:padding="@dimen/fit_spacing_standard_new">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/fit_colorBottomEditTextLine"
+                android:hint="@string/fit_your_email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/fit_spacing_22"
+                android:textAppearance="@style/fit_TextInputLayoutStyle" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fit_spacing_control"
+                android:backgroundTint="@color/fit_colorBottomEditTextLine"
+                android:hint="@string/fit_emailPassword"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/fit_spacing_22"
+                android:textAppearance="@style/fit_TextInputLayoutStyle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/fit_spacing_standard"
+                android:paddingBottom="@dimen/fit_spacing_standard">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/rememberSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/fit_colorPrimaryDark"
+                    android:checked="true"
+                    android:thumb="@drawable/fit_thumb_layout"
+                    app:track="@drawable/fit_track_layout" />
+
+                <TextView
+                    android:id="@+id/txtRemember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/rememberSwitch"
+                    android:paddingStart="@dimen/fit_spacing_standard_1"
+                    android:text="@string/fit_remember"
+                    android:textColor="@color/fit_colorTextSecondary"
+                   />
+
+                <TextView
+                    android:id="@+id/txtForget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/fit_forget"
+                    android:textColor="@color/fit_colorTextSecondary"
+                    />
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMailLogIn"
+                style="@style/fit_ButtonStyle"
+                android:backgroundTint="@color/fit_colorPrimaryDark"
+                android:text="@string/fit_log_in"
+                android:textColor="@color/fit_colorPureWhite"
+                 />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#07000000"
+        android:layout_marginTop="@dimen/_20sdp">
+        <TextView
+            android:id="@+id/txtEmailBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/fit_colorPureWhite"
+            android:drawableStart="@drawable/fit_keyboard_arrow_left_white_24dp"
+            android:gravity="center"
+            android:padding="@dimen/fit_spacing_control"
+            android:text="@string/fit_back"
+            android:textSize="@dimen/fit_font_size_medium"
+            android:textColor="@color/fit_colorPureWhite" />
+
+        <TextView
+            android:id="@+id/txtImageRText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/fit_spacing_control"
+            android:text="@string/fit_sign_up"
+            android:textSize="@dimen/fit_font_size_medium"
+            android:layout_marginEnd="@dimen/fit_spacing_standard"
+            android:textColor="@color/fit_colorPureWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

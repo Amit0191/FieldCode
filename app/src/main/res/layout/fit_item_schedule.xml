@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fit_spacing_control">
+
+    <RelativeLayout
+        android:id="@+id/scheduleCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fit_bg_shadow">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/scheduleItemImage"
+            android:layout_width="@dimen/fit_spacing_62"
+            android:layout_height="@dimen/fit_spacing_62"
+            android:background="@drawable/fit_roundborder"
+            android:scaleType="fitXY"
+            android:src="@drawable/fit_flow_yoga" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/scheduleDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/scheduleCard"
+        android:padding="@dimen/fit_spacing_control"
+        android:text="@string/fit_day_01" />
+
+    <TextView
+        android:id="@+id/itemscheduleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/fit_spacing_control"
+        android:text="@string/fit_schdule_20_mins" />
+
+    <TextView
+        android:id="@+id/scheduleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scheduleDay"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+        android:layout_toStartOf="@id/itemscheduleTime"
+        android:layout_toEndOf="@id/scheduleCard"
+        android:padding="@dimen/fit_spacing_control"
+        android:text="@string/fit_breathe_adjustment_and_warm_up"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+</RelativeLayout>

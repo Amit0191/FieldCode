@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/fit_spacing_standard"
+        app:cardElevation="@dimen/fit_spacing_control">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/JustImage"
+                android:layout_width="@dimen/fit_spacing_125"
+                android:layout_height="@dimen/fit_spacing_90"
+                android:scaleType="fitXY"
+                android:src="@drawable/fit_athlete3" />
+
+            <TextView
+                android:id="@+id/JustTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/JustImage"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_flow_yoga"
+                android:textAppearance="@style/fit_FontStyleMedium"
+                android:textColor="@color/fit_colorTextPrimary"
+                android:textSize="@dimen/fit_font_size_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/JustTitle"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_control_half"
+                android:layout_marginBottom="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_120_hours" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fit_spacing_22"
+    android:background="@drawable/fit_edittext"
+    android:padding="@dimen/fit_spacing_standard_new">
+
+    <TextView
+        android:id="@+id/txtActivityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fit_running"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_normal" />
+
+    <TextView
+        android:id="@+id/txtActivityDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtActivityName"
+        android:text="@string/fit_14km"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_normal" />
+
+    <TextView
+        android:id="@+id/txtActivityTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/fit_45_21"
+        android:textAppearance="@style/fit_FontStyleBold"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_spacing_large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtActivityTime"
+        android:layout_alignParentEnd="true"
+        android:text="@string/fit_duration"
+        android:textColor="@color/fit_colorTextPrimary" />
+
+</RelativeLayout>

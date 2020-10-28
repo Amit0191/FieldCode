@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fit_colorCreatePasswordBG"
+    tools:context=".fitActivity.FitCreateAccountActivity">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fit_slide3"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/fit_spacing_standard_new"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+            android:layout_marginTop="@dimen/fit_spacing_large"
+            android:layout_marginBottom="@dimen/fit_spacing_standard"
+            android:text="@string/fit_your_ultimate_personal_trainer"
+            android:textAppearance="@style/fit_FontStyleBold"
+            android:textColor="@color/fit_colorPureWhite"
+            android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/fit_spacing_standard_new"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+            android:lineSpacingExtra="@dimen/fit_spacing_control_half"
+            android:text="@string/fit_personalizes_workouts_and_plans_for_any_fitness_and_goal_level"
+            android:textAlignment="center"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorPureWhite"
+            android:textSize="@dimen/fit_font_size_medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCreateAccount"
+            style="@style/fit_ButtonStyle"
+            android:layout_marginStart="@dimen/fit_spacing_large"
+            android:layout_marginEnd="@dimen/fit_spacing_large"
+            android:layout_marginTop="@dimen/fit_spacing_large"
+            android:backgroundTint="@color/fit_colorBlack"
+            android:text="@string/fit_create_account"
+            android:textColor="@color/fit_colorPureWhite" />
+
+        <TextView
+            android:id="@+id/txtAlreadyACLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_already_have_a_account_log_in"
+            android:textColor="@color/fit_colorPureWhite" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fit_colorPureWhite"
+        tools:context=".fitFragment.FitVideoTrainingFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/videoBackImage"
+            style="@style/fit_back_button"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="@dimen/fit_spacing_standard"
+            android:layout_marginBottom="@dimen/fit_spacing_standard"
+            android:src="@drawable/fit_ic_keyboard_arrow_left_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/editImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:src="@drawable/fit_ic_more_horiz_white_24dp" />
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoBackImage"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_split_squat"
+            android:textAppearance="@style/fit_FontStyleBold"
+            android:textColor="@color/fit_colorBlack"
+            android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editImage"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fit_spacing_standard_new"
+            android:padding="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_10_21" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_280"
+            android:layout_below="@id/videoTitle"
+            android:layout_marginTop="@dimen/fit_spacing_10"
+            android:background="@drawable/fit_slide4" />
+
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoView"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:paddingTop="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_next_split_squat"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_medium" />
+
+        <TextView
+            android:id="@+id/txtSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNext"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_15_step_up_with_hop_to_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSub"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:layout_marginTop="@dimen/fit_spacing_standard_new"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+            android:layout_marginBottom="@dimen/fit_spacing_xxxlarge"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@null"
+                android:text="@string/fit_start_now"
+                android:textAllCaps="false"
+                app:cornerRadius="@dimen/fit_spacing_standard_new" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:stateListAnimator="@null"
+                android:text="@string/fit_add_to_list"
+                android:textAllCaps="false"
+                android:textColor="@color/fit_colorTextSecondary"
+                app:cornerRadius="@dimen/fit_spacing_standard_new"
+                app:icon="@drawable/fit_ic_add_white_24dp"
+                app:iconGravity="textStart"
+                app:iconTint="@color/fit_colorTextSecondary"
+                app:strokeWidth="0.5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:orientation="vertical"
+    tools:context=".fitActivity.FitWellDoneActivity">
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/welldoneImage"
+        android:layout_width="@dimen/fit_spacing_100"
+        android:layout_height="@dimen/fit_spacing_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:background="@drawable/fit_ripple_circle"
+        android:padding="@dimen/fit_spacing_large"
+        android:src="@drawable/fit_ic_forget_pass_lock"
+        tools:targetApi="m" />
+
+
+    <!--    </com.skyfishjy.library.RippleBackground>-->
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLoginNow"
+        style="@style/fit_ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/fit_spacing_large"
+        android:layout_marginEnd="@dimen/fit_spacing_large"
+        android:layout_marginBottom="@dimen/fit_spacing_60"
+        android:text="@string/fit_log_in_now" />
+
+    <TextView
+        android:id="@+id/welldoneDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnLoginNow"
+        android:layout_marginStart="@dimen/fit_spacing_30"
+        android:layout_marginEnd="@dimen/fit_spacing_30"
+        android:padding="@dimen/fit_spacing_standard_new"
+        android:text="@string/fit_password_description"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/welldonetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/welldoneDesc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fit_well_done"
+        android:textAppearance="@style/fit_FontStyleBold"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+</RelativeLayout>

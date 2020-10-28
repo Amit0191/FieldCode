@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fit_spacing_control">
+
+    <TextView
+        android:id="@+id/goalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/goalTime"
+        android:paddingTop="@dimen/fit_spacing_standard"
+        android:paddingBottom="@dimen/fit_spacing_standard"
+        android:text="@string/fit_today"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+    <TextView
+        android:id="@+id/goalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toStartOf="@id/goalDistance"
+        android:gravity="center"
+        android:paddingTop="@dimen/fit_spacing_standard"
+        android:paddingBottom="@dimen/fit_spacing_standard"
+        android:text="@string/fit_23m"
+        android:textColor="@color/fit_colorAccent"
+        android:textSize="@dimen/fit_font_size_small" />
+
+    <TextView
+        android:id="@+id/goalDistance"
+        android:layout_width="@dimen/fit_spacing_60"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:paddingTop="@dimen/fit_spacing_standard"
+        android:paddingBottom="@dimen/fit_spacing_standard"
+        android:text="@string/fit_23m"
+        android:textColor="@color/fit_colorTextSecondary"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+</RelativeLayout>

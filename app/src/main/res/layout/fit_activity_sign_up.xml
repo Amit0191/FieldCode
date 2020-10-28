@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:orientation="vertical"
+    tools:context=".fitActivity.FitSignUpActivity">
+
+    <TextView
+        android:id="@+id/signUpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/fit_ic_keyboard_arrow_left_black_24dp"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_back"
+        android:textColor="@color/fit_colorTextPrimary" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpBack"
+        android:orientation="vertical"
+        android:padding="@dimen/fit_spacing_28">
+
+        <TextView
+            android:id="@+id/txtSignUpToGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fit_sign_up_to_get"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/txt5PremiumCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fit_spacing_control"
+            android:text="@string/fit_5_premium_courses"
+            android:textAppearance="@style/fit_FontStyleBold"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_xxxlarge2" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSignUpName"
+            style="@style/fit_EditTextStyle"
+            android:layout_marginTop="@dimen/fit_spacing_30"
+            android:drawableStart="@drawable/fit_ic_user"
+            android:hint="@string/fit_name"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSignUpEmail"
+            style="@style/fit_EditTextStyle"
+            android:drawableStart="@drawable/fit_ic_mail"
+            android:hint="@string/fit_email"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtSignUpPassword"
+                style="@style/fit_EditTextStyle"
+                android:drawableStart="@drawable/fit_ic_lock"
+                android:hint="@string/fit_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/sighUpShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:onClick="showPassword"
+                android:text="@string/fit_show" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignUp"
+            style="@style/fit_ButtonStyle"
+            android:layout_marginTop="@dimen/fit_spacing_standard_new"
+            android:backgroundTint="@color/fit_colorPrimaryDark"
+            android:text="@string/fit_sign_up"
+            app:cornerRadius="@dimen/fit_spacing_standard" />
+
+        <TextView
+            android:id="@+id/txtTermCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_terms_of_use_and_privacy_policy" />
+
+    </LinearLayout>
+
+    <include layout="@layout/fit_layout_bottomtextview" />
+
+</LinearLayout>

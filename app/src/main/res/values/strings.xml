@@ -1,0 +1,199 @@
+<resources>
+
+    <string name="fit_font_bold">fit_font/GoogleSans-Bold.ttf</string>
+    <string name="fit_font_medium">fit_font/GoogleSans-Medium.ttf</string>
+    <string name="fit_font_regular">fit_font/GoogleSans-Regular.ttf</string>
+
+    <string name="app_name">CodeField Fitness</string>
+    <string name="fit_make_yourself_better">Make\nYourself\nBetter</string>
+    <string name="fit_your_personal_fitness_trainer">Your Personal Fitness Trainer</string>
+    <string name="fit_start_training">Start Training</string>
+    <string name="fit_your_ultimate_personal_trainer">Your Ultimate\nPersonal Trainer</string>
+    <string name="fit_personalizes_workouts_and_plans_for_any_fitness_and_goal_level">Personalizes workouts and plans for\nany fitness and goal level</string>
+    <string name="fit_create_account">Create Account</string>
+    <string name="fit_already_have_a_account_log_in">Already have a account? <u>Log In</u></string>
+    <string name="fit_back">Back</string>
+    <string name="fit_sign_up_to_get">Sign up to get</string>
+    <string name="fit_5_premium_courses">5 Premium\nCourses</string>
+    <string name="fit_name">Name</string>
+    <string name="fit_email">Email</string>
+    <string name="fit_password">Password</string>
+    <string name="fit_show">Show</string>
+    <string name="fit_sign_up">Sign Up</string>
+    <string name="fit_terms_of_use_and_privacy_policy"><b>Terms of Use</b> and <b>Privacy Policy</b></string>
+    <string name="fit_already_have_account_login">Already have account?<b><font color="#0000"> Log In</font> </b></string>
+    <string name="fit_continue_with_facebook">Continue with Facebook</string>
+    <string name="fit_create_account_with_email">Create Account with Email</string>
+    <string name="fit_log_in">Log In</string>
+    <string name="fit_get_fit_with_our_professional_training_courses">Get fit with our\nprofessional\ntraining courses</string>
+    <string name="fit_your_email"><font color="#0000">Your Email</font></string>
+    <string name="fit_emailPassword"><font color="#0000">Password</font></string>
+    <string name="fit_remember">Remember</string>
+    <string name="fit_remeber">Remeber?</string>
+    <string name="fit_forget">Forgot?</string>
+    <string name="fit_sign_up_with_facebook">Sign Up with facebook</string>
+    <string name="fit_please_log_back_into_your_account">Please log back\ninto your account</string>
+
+    <string-array name="fit_homeHeading">
+        <item>Make Yourself\nBetter</item>
+        <item>Personalised\nTraining</item>
+        <item>Make yourself\nStronger</item>
+        <item>Make yourself\nStronger</item>
+    </string-array>
+
+    <string-array name="fit_loginHeading">
+        <item>View and Go</item>
+        <item>Smart &amp; Skilled</item>
+        <item>Personal Training</item>
+        <item>Better &amp; Improved</item>
+    </string-array>
+
+    <string name="fit_hello_blank_fragment">Hello blank fragment</string>
+    <string name="fit_welcome_back_miranda">Welcome back\nMiranda</string>
+    <string name="fit_log_back_into_your_account">Log back into your account</string>
+    <string name="fit_don_t_have_an_account_sign_up">Don\'t have an account?<b>Sign up!</b> </string>
+    <string name="fit_forget_password_activity">Forgot\nPassword?</string>
+    <string name="fit_skip">Skip</string>
+
+
+    <string name="fit_training">Training</string>
+    <string name="fit_goals">Goals</string>
+    <string name="fit_course">Courses</string>
+    <string name="fit_news_feed">News Feed</string>
+    <string name="fit_profile">Profile</string>
+    <string name="fit_how_to_train_like_a_pro">How to train\nLike a Pro</string>
+    <string name="fit_popular_training">Popular Training</string>
+    <string name="fit_new"><font size="12">New</font></string>
+    <string name="fit_legs_and_abs">Legs and Abs</string>
+    <string name="fit_flow_yoga">Flow Yoga</string>
+    <string name="fit_just_for_you">Just for you</string>
+    <string name="fit_most_popular_courses">Most Popular Courses</string>
+    <string name="fit_yoga_master">Yoga Master</string>
+    <string name="fit_keeps_your_waist_in_shape">Keeps your waist in shape</string>
+    <string name="fit_288_review">(288 Review)</string>
+    <string name="fit_5_weeks"><b><font color="#070706">5</font></b> Weeks</string>
+    <string name="fit_25_days"><b><font color="#070706">25</font></b> days</string>
+    <string name="fit_20_mins"><b><font color="#070706">20</font></b> Mins</string>
+    <string name="fit_schedule">Schedule</string>
+    <string name="fit_day_01">DAY 01</string>
+    <string name="fit_schdule_20_mins">20 mins</string>
+    <string name="fit_breathe_adjustment_and_warm_up">Breathe Adjustment and Warm-up</string>
+    <string name="fit_split_squat">Split\nSquat</string>
+    <string name="fit_10_21"><b>10</b>/21</string>
+    <string name="fit_next_split_squat">Next: Split Squat</string>
+    <string name="fit_15_step_up_with_hop_to_back">15 Step Up with Hop to Back</string>
+    <string name="fit_start_now">Start now</string>
+    <string name="fit_add_to_list">Add to list</string>
+    <string name="fit_search">Search</string>
+    <string name="fit_popular_courses">Popular Courses</string>
+
+    <string name="fit_1_2k_followers"><font size="20">1.2k</font>\nfollowers</string>
+    <string name="fit_348_followers"><font size="30">348</font>\nfollowers</string>
+    <string name="fit_30k_followers"><font size="30">30k</font>\nfollowers</string>
+    <string name="fit_2_2k_followers"><font size="30">2.2k</font>\nfollowers</string>
+    <string name="fit_100_followers"><font size="30">100</font>\nfollowers</string>
+    <string name="fit_miranda">Miranda</string>
+    <string name="fit_capital_height">HEIGHT</string>
+    <string name="fit_age">AGE</string>
+    <string name="fit_rating">RATING</string>
+    <string name="fit_175cm">175cm</string>
+    <string name="fit_32">32</string>
+    <string name="fit_description">DESCRIPTION</string>
+    <string name="fit_top_courses">Top Courses</string>
+    <string name="fit_trainer_description">Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you’re just looking for new inspiration for a the new year. Whatever your situation, reading words of wisdom from successful people can be super-inspiring.</string>
+    <string name="fit_su">Su</string>
+    <string name="fit_training_day">Training Day</string>
+    <string name="fit_show_all">Show all</string>
+    <string name="fit_distance">Distance</string>
+    <string name="fit_calories">Calories</string>
+    <string name="fit_1_03_30">1:03:30</string>
+    <string name="fit_activities">Activities</string>
+    <string name="fit_running">Running</string>
+    <string name="fit_14km">14km</string>
+    <string name="fit_45_21">45:21</string>
+    <string name="fit_duration">Duration</string>
+    <string name="fit_carly_jackson">Carly\nJackson</string>
+    <string name="fit_1280_followers"><b><font size="25">1280</font></b>\nfollowers</string>
+    <string name="fit_380_following"><b><font size="25">380</font></b>\nfollowing</string>
+    <string name="fit_my_videos">My Videos</string>
+    <string name="fit_photos">Photos</string>
+    <string name="fit_statistics">Statistics</string>
+    <string name="fit_account">Account</string>
+    <string name="fit_settings">Settings</string>
+    <string name="fit_forget_password">Forgot Password?</string>
+    <string name="fit_password_description">Lacking motivation to get back into the gym? Back in the gym already but feel stagnated? Or maybe you’re just looking for new inspiration for a the new year.</string>
+    <string name="fit_send">Send</string>
+    <string name="fit_well_done">Well done!</string>
+    <string name="fit_log_in_now">Log in now</string>
+    <string name="fit_enter_password">Enter Password</string>
+    <string name="fit_h">H</string>
+    <string name="fit_12">12</string>
+    <string name="fit_notifications">Notifications</string>
+    <string name="fit_this_way_you_will_see_when_someone_messages_you_instantly">This way you will see when someone messages you instantly</string>
+    <string name="fit_turn_on_all_notifications">Turn on all Notifications</string>
+    <string name="fit_friends_nearby">Friends Nearby</string>
+    <string name="fit_15_meters">15 meters</string>
+    <string name="fit_take_a_right_on_tsun_yuen_street">Take a right on Tsun Yuen street</string>
+    <string name="fit_time">Time</string>
+    <string name="fit_avg_speed">Avg. Speed</string>
+    <string name="fit_10_20_km">10,20 km</string>
+    <string name="fit_10_2km_h">10,2km/h</string>
+    <string name="fit_start">Start</string>
+    <string name="fit_unlimited_access_to_all_courses">Unlimited Access to all courses!</string>
+    <string name="fit_get_now">Get Now</string>
+    <string name="fit_dlg_desc">Unlimited Access to over\n2500 training courses</string>
+    <string name="fit_go_unlimited">Go Unlimited</string>
+    <string name="fit_no_thanks_just_take_me_to_home">No thanks, just take me to home</string>
+    <string name="fit_goal">Goal</string>
+    <string name="fit_30km">30km</string>
+    <string name="fit_160_5kcal">160,5kcal</string>
+    <string name="fit_history">History</string>
+    <string name="fit_today">Today</string>
+    <string name="fit_23m">+23m</string>
+    <string name="fit_cancel">Cancel</string>
+    <string name="fit_edit_training">Edit Training</string>
+    <string name="fit_title"><font size="25">Title</font></string>
+    <string name="fit_select_your_training_date_range">Select your training date range</string>
+    <string name="fit_next">Next</string>
+    <string name="fit_morning_workout">Morning workout</string>
+    <string name="fit_date">Date</string>
+    <string name="fit_18th_sep_25th_sep_2018">18th Sep - 25th Sep,2018</string>
+    <string name="fit_training_type">Training Type</string>
+    <string name="fit_dumbbell_flyes">Dumbbell Flyes</string>
+    <string name="fit_15_mins">15 mins</string>
+    <string name="fit_edit">Edit</string>
+    <string name="fit_power_lifting">Power Lifting</string>
+    <string name="fit_bulgarian_squat">Bulgarian Squat</string>
+    <string name="fit_push_up">Push-Up</string>
+    <string name="fit_barbell_bench_press">Barbell Bench Press</string>
+    <string name="fit_25_mins">25 mins</string>
+    <string name="fit_10_mins">10 mins</string>
+    <string name="fit_add_exercise">Add exercise</string>
+    <string name="fit_save_training">Save Training</string>
+    <string name="fit_cardio_fitness">Cardio Fitness</string>
+    <string name="fit_upper_body_workout">Upper Body\nWorkout</string>
+    <string name="fit_30_days_home_training">30 Days Home Training</string>
+    <string name="fit_courses_for_you">Courses for you</string>
+    <string name="fit_barbell_bench_press_title">Barbell\nBench Press</string>
+    <string name="fit_00_42_18">00:42:18</string>
+    <string name="fit_10_from_30"><b><font size="50">10</font></b>\nfrom 30</string>
+    <string name="fit_next_training">Next Training</string>
+    <string name="fit_stop">Stop</string>
+    <string name="fit_120_hours">120 hours</string>
+    <string name="fit_18_09_2020">18/09/2020</string>
+    <string name="fit_to">To</string>
+    <string name="fit_8_00">8:00</string>
+    <string name="fit_13_00">13:00</string>
+    <string name="fit_15_00">15:00</string>
+    <string name="fit_20_00">20:00</string>
+    <string name="fit_23_00">23:00</string>
+    <string name="fit_miranda_jones">Miranda Jones</string>
+    <string name="fit_hot_yoga_teacher">Hot Yoga Teacher</string>
+    <string name="fit_gym_training">gym training</string>
+    <string name="fit_12_days_training_courses">12 Days Training Courses</string>
+    <string name="fit_hide">Hide</string>
+    <string name="fit_popular_teachers">Popular Teachers</string>
+    <string name="fit_follow">Follow</string>
+    <string name="fit_pause">Pause</string>
+
+</resources>

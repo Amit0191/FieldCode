@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitActivity.FitEditTrainingActivity">
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_cancel"
+        android:textColor="@color/fit_colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_edit_training"
+        android:textColor="@color/fit_colorTextPrimary" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/editTrainingMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:src="@drawable/fit_ic_more_horiz_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/trainingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancel"
+        android:layout_marginStart="@dimen/fit_spacing_standard_1"
+        android:layout_marginTop="@dimen/fit_spacing_standard_1"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+        android:hint="@string/fit_title"
+        android:inputType="text"
+        android:lastBaselineToBottomHeight="@dimen/fit_spacing_22"
+        android:textSize="@dimen/fit_font_size_xxlarge"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/txtSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trainingTitle"
+        android:layout_marginTop="@dimen/fit_spacing_10"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_select_your_training_date_range" />
+
+    <TextView
+        android:id="@+id/txtStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSelect"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/fit_spacing_standard_1"
+        android:layout_toStartOf="@+id/txtTo"
+        android:background="@drawable/fit_date_drawable"
+        android:drawableEnd="@drawable/fit_ic_calendar"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_10"
+        android:text="@string/fit_18_09_2020"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSelect"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_to" />
+
+    <TextView
+        android:id="@+id/txtEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSelect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+        android:layout_toEndOf="@id/txtTo"
+        android:background="@drawable/fit_date_drawable"
+        android:drawableEnd="@drawable/fit_ic_calendar"
+        android:gravity="center"
+        android:padding="@dimen/fit_spacing_10"
+        android:text="@string/fit_18_09_2020"
+        android:textColor="@color/fit_colorPrimaryDark" />
+
+    <CalendarView
+        android:id="@+id/calenderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStartDate"
+        android:layout_marginTop="@dimen/fit_spacing_standard_1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        style="@style/fit_ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fit_spacing_standard_new"
+        android:layout_marginBottom="@dimen/fit_spacing_standard_new"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_next" />
+
+
+</RelativeLayout>

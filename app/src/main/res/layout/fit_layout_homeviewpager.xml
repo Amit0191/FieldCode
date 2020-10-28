@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guide_line"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintGuide_percent="0.6"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vpHomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide_line"
+        android:background="@color/fit_colorBlack"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/fit_slide7" />
+
+    <TextView
+        android:id="@+id/vpHomeHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guide_line"
+        android:layout_below="@id/vpHomeImage"
+        android:layout_marginStart="@dimen/fit_spacing_standard_new"
+        android:layout_marginTop="@dimen/fit_spacing_standard_new"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+        android:text="@string/fit_make_yourself_better"
+        android:textAppearance="@style/fit_FontStyleBold"
+        android:textColor="@color/fit_colorTextPrimary"
+        android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vpHomeHeading"
+        android:layout_marginStart="@dimen/fit_spacing_standard_new"
+        android:layout_marginTop="@dimen/fit_spacing_standard_new"
+        android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+        android:text="@string/fit_personalizes_workouts_and_plans_for_any_fitness_and_goal_level"
+        android:textAppearance="@style/fit_FontStyleMedium"
+        android:textSize="@dimen/fit_font_size_medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorGrey"
+    tools:context=".fitActivity.FitFriendNearByActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/friendsNearMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/NotificationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/fit_spacing_standard_new"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:src="@drawable/fit_ic_keyboard_arrow_left_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/notificationMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/fit_spacing_standard_new"
+        android:padding="@dimen/fit_spacing_standard_1"
+        android:src="@drawable/fit_ic_more_horiz_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fit_spacing_14"
+        android:background="@drawable/fit_bg_shadow"
+        android:backgroundTint="@color/fit_colorPureWhite"
+        android:padding="@dimen/fit_spacing_standard_new">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mapArrow"
+            android:layout_width="@dimen/fit_spacing_45"
+            android:layout_height="@dimen/fit_spacing_45"
+            android:scaleType="centerInside"
+            android:src="@drawable/fit_ic_turn_right_arrow" />
+
+        <TextView
+            android:id="@+id/mapDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/mapArrow"
+            android:padding="@dimen/fit_spacing_6"
+            android:text="@string/fit_15_meters"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapDistance"
+            android:layout_marginStart="@dimen/fit_spacing_6"
+            android:layout_toEndOf="@id/mapArrow"
+            android:text="@string/fit_take_a_right_on_tsun_yuen_street" />
+
+        <View
+            android:id="@+id/mLine1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/mapArrow"
+            android:layout_marginTop="@dimen/fit_spacing_standard"
+            android:layout_marginBottom="@dimen/fit_spacing_standard"
+            android:background="@color/fit_colorBottomEditTextLine" />
+
+        <TextView
+            android:id="@+id/lblrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLine1"
+            android:layout_alignParentStart="true"
+            android:text="@string/fit_time" />
+
+        <TextView
+            android:id="@+id/lblDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLine1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fit_distance" />
+
+        <TextView
+            android:id="@+id/lblAvgSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLine1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+            android:text="@string/fit_avg_speed" />
+
+        <!--        -->
+
+        <TextView
+            android:id="@+id/txtMapTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblrating"
+            android:layout_alignParentStart="true"
+            android:text="@string/fit_45_21"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/txtMapDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblDistance"
+            android:layout_alignStart="@+id/lblDistance"
+            android:text="@string/fit_10_20_km"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <TextView
+            android:id="@+id/txtMapAvgSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblAvgSpeed"
+            android:layout_alignStart="@+id/lblAvgSpeed"
+            android:layout_alignParentEnd="true"
+            android:text="@string/fit_10_2km_h"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorTextPrimary"
+            android:textSize="@dimen/fit_font_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMapDistance"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/fit_spacing_standard_new1"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_new"
+                android:layout_weight="1"
+                android:backgroundTint="@color/fit_colorPrimaryDark"
+                android:stateListAnimator="@null"
+                android:text="@string/fit_start"
+                android:textAllCaps="false"
+                app:cornerRadius="@dimen/fit_spacing_standard_new" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/fit_colorPureWhite"
+                android:stateListAnimator="@null"
+                android:text="@string/fit_pause"
+                android:textAllCaps="false"
+                android:textColor="@color/fit_colorTextSecondary"
+                app:cornerRadius="@dimen/fit_spacing_standard_new"
+                app:strokeColor="@color/fit_colorTextSecondary"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

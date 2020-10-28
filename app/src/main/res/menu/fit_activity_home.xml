@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuTraining"
+        android:icon="@drawable/fit_ic_energy"
+        android:title="@string/fit_training" />
+
+    <item android:id="@+id/menuGoals"
+        android:icon="@drawable/fit_ic_goal"
+        android:title="@string/fit_goals" />
+
+    <item android:id="@+id/menuCourse"
+        android:icon="@drawable/fit_ic_videocam_black_24dp"
+        android:title="@string/fit_course" />
+
+<!--    <item android:id="@+id/menuNewsFeed"-->
+<!--        android:icon="@drawable/fit_ic_star"-->
+<!--        android:title="@string/fit_news_feed" />-->
+
+    <item android:id="@+id/menuProfile"
+        android:icon="@drawable/fit_ic_account"
+        android:title="@string/fit_profile" />
+
+</menu>

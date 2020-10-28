@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    android:overScrollMode="never"
+    tools:context=".fitFragment.FitBeginnerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/beginnerRelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fit_spacing_standard_1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/beginnerImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fit_spacing_300"
+                android:background="@drawable/fit_roundborder"
+                android:scaleType="fitXY"
+                android:src="@drawable/fit_athlete" />
+
+            <TextView
+                android:id="@+id/skilledText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skilledTitle"
+                android:layout_marginStart="@dimen/fit_spacing_large"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_30_days_home_training"
+                android:textColor="@color/fit_colorPureWhite" />
+
+            <TextView
+                android:id="@+id/skilledTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fit_spacing_large"
+                android:layout_marginTop="@dimen/fit_spacing_200"
+                android:text="@string/fit_upper_body_workout"
+                android:textAppearance="@style/fit_FontStyleBold"
+                android:textColor="@color/fit_colorPureWhite"
+                android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/beginnerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beginnerRelative"
+            android:layout_marginStart="@dimen/fit_spacing_standard_1"
+            android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+            android:layout_marginBottom="@dimen/fit_spacing_standard"
+            android:text="@string/fit_courses_for_you"
+            style="@style/fit_heading_text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/beginnerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beginnerText"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_new"
+            android:layoutAnimation="@anim/fit_layout_fall_down"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

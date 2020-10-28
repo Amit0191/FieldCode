@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fit_colorPrimaryLight">#F4B6A1</color>
+    <color name="fit_colorPrimaryDark">#F4B6A1</color>
+    <color name="fit_colorAccent">#03DAC5</color>
+
+    <color name="fit_colorStartBackground">#F4B6A1</color>
+
+    <color name="fit_colorTextPrimary">#070706</color>
+    <color name="fit_colorTextSecondary">#747474</color>
+
+    <color name="fit_colorBlack">#070706</color>
+    <color name="fit_colorGrey">#E5E5E5</color>
+    <color name="fit_colorPureWhite">#FFFFFF</color>
+    <color name="fit_colorCreatePasswordBG">#A28B85</color>
+
+    <color name="fit_colorBottomEditTextLine">#DBD9D9</color>
+
+    <color name="fit_colorTabBackGround">#F9F9F9</color>
+
+</resources>

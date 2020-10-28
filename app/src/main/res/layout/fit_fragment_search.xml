@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fit_colorPureWhite"
+    tools:context=".fitFragment.FitSearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+            <TextView
+                android:id="@+id/searchBackImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableStart="@drawable/fit_ic_keyboard_arrow_left_pink_24dp"
+                android:gravity="center"
+                android:text="@string/fit_back"
+                android:textSize="@dimen/fit_font_size_medium"
+                android:textColor="@color/fit_colorPrimaryDark" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/searchEditImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/fit_spacing_10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/fit_ic_more_horiz_pink_24dp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_head">
+
+            <TextView
+                android:id="@+id/txtSearchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_search"
+                android:textAppearance="@style/fit_FontStyleBold"
+                android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSearchTitle"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+                android:background="@drawable/fit_edittext"
+                android:drawableStart="@drawable/fit_ic_search_black_24dp"
+                android:drawableEnd="@drawable/fit_ic_keyboard_voice_black_24dp"
+                android:drawablePadding="@dimen/fit_spacing_control"
+                android:hint="@string/fit_search"
+                android:inputType="text"
+                android:padding="@dimen/fit_spacing_standard"
+                 />
+
+            <TextView
+                android:id="@+id/txtSearchPopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchEditText"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+                android:layout_marginBottom="@dimen/fit_spacing_10"
+                android:text="@string/fit_popular_courses"
+                style="@style/fit_heading_text"  />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchPopularRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSearchPopular"
+                android:layoutAnimation="@anim/fit_layout_fall_down"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:id="@+id/txtTeacherTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchPopularRecycler"
+                android:layout_marginStart="@dimen/fit_spacing_standard_1"
+                android:layout_marginTop="@dimen/fit_spacing_standard_1"
+                android:text="@string/fit_popular_teachers"
+                style="@style/fit_heading_text" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchTeacherRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTeacherTitle"
+                android:layout_marginEnd="@dimen/fit_spacing_standard_1"
+                android:layout_marginBottom="@dimen/fit_spacing_standard_new"
+                android:layoutAnimation="@anim/fit_layout_fall_down"
+                android:overScrollMode="never" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

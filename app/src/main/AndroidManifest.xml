@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amit.fieldcode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fit_ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/fit_ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/FitAppTheme">
+        <activity android:name="com.amit.fieldcode.fitActivity.FitHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitBarbellBenchPressActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitSaveTrainingActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitEditTrainingActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitFriendNearByActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitNotificationActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitWellDoneActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitEnterPasswordActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitForgetPasswordActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitLoginBackActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitCreateWithEmailActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitLoginActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitSignUpActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitCreateAccountActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitLoginWithEmailActivity" android:theme="@style/FitAppTheme"/>
+        <activity android:name="com.amit.fieldcode.fitActivity.FitMainActivity" android:theme="@style/FitAppTheme"/>
+    </application>
+
+</manifest>

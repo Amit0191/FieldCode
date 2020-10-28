@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/fit_spacing_22"
+    app:cardCornerRadius="@dimen/fit_spacing_standard_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dlgImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fit_spacing_180"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/fit_athlete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_dlg_desc"
+            android:textAlignment="center"
+            android:textAppearance="@style/fit_FontStyleMedium"
+            android:textColor="@color/fit_colorTextSecondary"
+            android:textSize="@dimen/fit_font_size_medium" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dlgBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fit_spacing_30"
+            android:layout_marginEnd="@dimen/fit_spacing_30"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_new"
+            android:backgroundTint="@color/fit_colorBlack"
+            android:stateListAnimator="@null"
+            android:text="@string/fit_go_unlimited"
+            android:textAllCaps="false"
+            android:textColor="@color/fit_colorPureWhite"
+            app:cornerRadius="@dimen/fit_spacing_standard_new"
+            app:icon="@drawable/fit_ic_arrow_forwardwhite_24dp"
+            app:iconGravity="textEnd" />
+
+        <TextView
+            android:id="@+id/txtTakeHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/fit_spacing_standard_new"
+            android:text="@string/fit_no_thanks_just_take_me_to_home" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

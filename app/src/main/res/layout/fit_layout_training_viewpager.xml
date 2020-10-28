@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fit_spacing_250">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/trainingVpImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fit_spacing_250"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fit_athlete3" />
+
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/trainingBack"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/fit_spacing_14"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:padding="@dimen/fit_spacing_standard_1"-->
+    <!--        android:src="@drawable/fit_keyboard_arrow_left_white_24dp" />-->
+
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/editTraining"-->
+    <!--        android:layout_marginTop="@dimen/fit_spacing_14"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:padding="@dimen/fit_spacing_standard_1"-->
+    <!--        android:src="@drawable/fit_ic_more_horiz_white_24dp" />-->
+
+    <TextView
+        android:id="@+id/trainingVpHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fit_spacing_100"
+        android:paddingStart="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_how_to_train_like_a_pro"
+        android:textAppearance="@style/fit_FontStyleBold"
+        android:textColor="@color/fit_colorPureWhite"
+        android:textSize="@dimen/fit_font_size_xxxlarge" />
+
+    <TextView
+        android:id="@+id/trainingVpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trainingVpHeading"
+        android:layout_marginTop="@dimen/fit_spacing_standard"
+        android:paddingStart="@dimen/fit_spacing_standard_1"
+        android:text="@string/fit_12_days_training_courses"
+        android:textColor="@color/fit_colorPureWhite" />
+
+    <LinearLayout
+        android:id="@+id/trainingVpDotIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/fit_spacing_standard_1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/fit_spacing_standard_new"
+        android:paddingStart="@dimen/fit_spacing_standard_1"
+        android:paddingBottom="@dimen/fit_spacing_standard_1" />
+
+</RelativeLayout>

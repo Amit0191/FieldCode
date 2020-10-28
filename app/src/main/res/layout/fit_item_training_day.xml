@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/fit_spacing_6"
+    android:paddingBottom="@dimen/fit_spacing_6">
+
+    <TextView
+        android:id="@+id/trainingDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fit_spacing_10"
+        android:text="@string/fit_su" />
+</RelativeLayout>
+
